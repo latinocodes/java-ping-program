@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class weekFourProgram {
+public class PingProgram {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
