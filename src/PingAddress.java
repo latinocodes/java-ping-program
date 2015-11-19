@@ -17,15 +17,19 @@ public class PingAddress {
 
 	    // read the output from the command
 	    System.out.println("\nPinging: " + addressToPing+ "\n");
-	    while ((str = stdInput.readLine()) != null)
-	    {
+	    
+	    while ((str = stdInput.readLine()) != null) {
+	    	
 	      System.out.println(str);
 	    }
-
+	    
 	    // read any errors from the attempted command
-	    System.out.println("There was an Error pinging (" + addressToPing + ") Please read below: \n");
-	    while ((str = stdError.readLine()) != null)
-	    {
+	    if((str = stdError.readLine()) != null)
+	    	System.out.println("There was an Error pinging (" + addressToPing + ") Please read below: \n");
+	    
+	    
+	    while ((str = stdError.readLine()) != null) {
+	    	
 	      System.out.println(str);
 	    }
 	  }

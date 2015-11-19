@@ -18,7 +18,7 @@ public class PingProgram {
 	    
 	    cmd.add("ping");
 	    cmd.add("-c");
-	    cmd.add("7");
+	    cmd.add("10");
 	    cmd.add(addressToPing);
 	    ping.RunCommand(cmd, addressToPing);
 	    
